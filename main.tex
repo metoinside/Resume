@@ -1,0 +1,248 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Metin}{Akın}{ \urlstyle{same}\url{http://metoinside.com} \\
+\href{mailto:hey@metoinside.com}{hey@metoinside.com} | +90 (507) 056 2028
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Yıldız Tech. University}
+\descript{MEng in Electronics Engineering}
+\location{Expected Jan 2017 | Istanbul, TR \\ Cum. GPA: N/A}
+\sectionsep
+
+\subsection{Bilecik S.E. University}
+\descript{BS in Electrical-Electronics Engineering}
+\location{Grad. August 2013 | Bilecik, TR}
+\location{ Cum. GPA: 2.96 / 4.0 }
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/metoinside}{\custombold{metoinside}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/metoinside}{\custombold{metoinside}} \\
+Twitter://  \href{https://twitter.com/metoinside}{\custombold{@metoinside}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Machine Learning \\
+Software Engineering \\
+\sectionsep
+
+\subsection{Undergraduate}
+\href{https://s3.amazonaws.com/verify.edx.org/downloads/da8f6310cc1d4955b810a45a3f79d526/Certificate.pdf}{Embedded Systems} \\
+\href{https://s3.amazonaws.com/verify.edx.org/downloads/6ec0a7e04dd64df5aa47a653321fbf57/Certificate.pdf}{Introduction to Linux} \\
+Fuzzy Logic \\
+Computer Vision \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{}   C++ \textbullet{} C \textbullet{} Matlab \\
+HTML \textbullet{} CSS \textbullet{} PHP \\ 
+\location{Familiar:}
+Java \textbullet{} Android \textbullet{} MySQL \textbullet{} Git
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Hobbies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hobbies}
+Cycling \textbullet{}  Running \\ 
+Spray-Painting \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\href{http://letsdoitturkiye.org.tr/}{\runsubsection{Let's Do It! Türkiye}}
+\descript{| Country Coordinator }
+\location{Nov 2014 – May 2015 | Istanbul, Turkey}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Lead a single day, nation-wide clean up action accross the country.
+\item Provide instructions and promotional materials for multiple teams in various cities.
+\item Lead local clean-up action in Belgrad Forests of Istanbul with 200 people attendance from corporate companies, non-governmental organizations, university clubs and involving people with disabilities.
+\end{tightemize}
+\sectionsep
+
+\href{http://infron.com.tr/}{\runsubsection{Infron Ltd}}
+\descript{| Software Engineer }
+\location{Mar 2014 – Feb 2015 | Istanbul, Turkey}
+\begin{tightemize}
+\item Worked on the hardware and software development of palm-size ECG(Electrocardiogram) device.
+\item Mainly Qt framework used for development.
+\item Implemented DICOM standard with open-source libraries into the device.
+\item After sales support, maintain marketing and PR operations.
+\end{tightemize}
+\sectionsep
+
+\href{http://www.anadolusigorta.com.tr/}{\runsubsection{Anadolu Sigorta}}
+\descript{| Risk Man. \& Internal Audit Team Member}
+\location{Jan 2013 – Mar 2013 | Istanbul, Turkey}
+\begin{tightemize}
+\item Worked as a team member to reduce risk of fraud accounts.
+\end{tightemize}
+\sectionsep
+
+\href{http://kade.com.tr/}{\runsubsection{Kade Vision}}
+\descript{| Intern}
+\location{Jun 2013 – Jul 2013 | Ankara, Turkey }
+\begin{tightemize}
+\item Maintain the source code of human counting algorithm which built with OpenCV.
+\end{tightemize}
+\sectionsep
+
+\href{http://www.accenture.com/lv-en/}{\runsubsection{Accenture Latvia}}
+\descript{| Testing Team Member \& Intern}
+\location{Jun 2012 – Sep 2012 | Riga, Latvia \& Pune, India}
+\begin{tightemize}
+\item Implemented ~1000 test cases with the team of 6 people \\
+\item Product was built for customs of EU member and candidate countries with C++ and besides of manually testing of cases did automated performance tests   \\
+\item Worked smoothly with the specification and development team \\
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Blogging
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Blogging}
+\href{http://metoinside.com/}{\runsubsection{metoinside.com}}
+
+\location{Jan 2010 – Present | Turkey}
+\begin{tightemize}
+\item I write about change, internet of things, programming, leadership, critical decissions, and rarely art \& culture.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publication
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publication} 
+\begin{tabular}{rll}
+Turkish	     & \href{http://www.isites.info/PastConferences/ISITES2013/}{ISITES 2013}  & \href{http://www.isites.info/PastConferences/ISITES2013/}{Safety Audit With Imaging Systems For Level Crossing Areas}  \\
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Societies} 
+
+\begin{tabular}{rll}
+2014 	& Board Member    & \href{http://kocaeliturkcetoastmasters.org/}{Association Of Research And Development On Societal Issues} \\
+2015 	& Founder    & \href{http://kocaeliturkcetoastmasters.org/}{Kocaeli Turkish Toastmasters} \\
+2013 	& Member    & \href{http://istanbultoastmasters.org/}{Istanbul Toastmasters} \\
+2013 	& Member    & IEEE \\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
