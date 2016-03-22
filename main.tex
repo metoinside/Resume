@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -46,7 +46,6 @@
 
 \documentclass[]{deedy-resume-openfont}
 
-
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,8 +60,6 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \namesection{Metin}{Akın}{ \urlstyle{same}\url{http://metoinside.com} \\
 \href{mailto:hey@metoinside.com}{hey@metoinside.com} | +90 (507) 056 2028
 }
@@ -73,18 +70,24 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.33\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Education}
 
 \subsection{Yıldız Tech. University}
 \descript{MEng in Electronics Engineering}
-\location{Expected Jan 2017 | Istanbul, TR \\ Cum. GPA: N/A}
+\location{Expected Jan 2018 | Istanbul, TR \\ Cum. GPA: N/A}
 \sectionsep
+
+\subsection{Riga Tech. University}
+\descript{Erasmus Exchange Semester }
+\location{Jan-Jun 2012 | Riga, LV}
+\sectionsep
+
 
 \subsection{Bilecik S.E. University}
 \descript{BS in Electrical-Electronics Engineering}
@@ -92,15 +95,14 @@
 \location{ Cum. GPA: 2.96 / 4.0 }
 \sectionsep
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-Github:// \href{https://github.com/metoinside}{\custombold{metoinside}} \\
-LinkedIn://  \href{https://www.linkedin.com/in/metoinside}{\custombold{metoinside}} \\
-Twitter://  \href{https://twitter.com/metoinside}{\custombold{@metoinside}} \\
+\section{Links}
+Github:// \href{https://github.com/metoinside}{\custombold{\textcolor{blue}{metoinside}}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/metoinside}{\custombold{\textcolor{blue}{metoinside}}} \\
+Twitter://  \href{https://twitter.com/metoinside}{\custombold{\textcolor{blue}{metoinside}}} \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -114,8 +116,8 @@ Software Engineering \\
 \sectionsep
 
 \subsection{Undergraduate}
-\href{https://s3.amazonaws.com/verify.edx.org/downloads/da8f6310cc1d4955b810a45a3f79d526/Certificate.pdf}{Embedded Systems} \\
-\href{https://s3.amazonaws.com/verify.edx.org/downloads/6ec0a7e04dd64df5aa47a653321fbf57/Certificate.pdf}{Introduction to Linux} \\
+\href{https://s3.amazonaws.com/verify.edx.org/downloads/da8f6310cc1d4955b810a45a3f79d526/Certificate.pdf}{\textcolor{blue}{Embedded Systems}} \\
+\href{https://s3.amazonaws.com/verify.edx.org/downloads/6ec0a7e04dd64df5aa47a653321fbf57/Certificate.pdf}{\textcolor{blue}{Introduction to Linux}} \\
 Fuzzy Logic \\
 Computer Vision \\
 \sectionsep
@@ -126,8 +128,8 @@ Computer Vision \\
 
 \section{Skills}
 \subsection{Programming}
-Python \textbullet{}   C++ \textbullet{} C \textbullet{} Matlab \\
-HTML \textbullet{} CSS \textbullet{} PHP \\ 
+Python \textbullet{}   C++ \textbullet{} C \textbullet{} MATLAB \\
+HTML \textbullet{} CSS \textbullet{} PHP \\
 \location{Familiar:}
 Java \textbullet{} Android \textbullet{} MySQL \textbullet{} Git
 \sectionsep
@@ -137,9 +139,8 @@ Java \textbullet{} Android \textbullet{} MySQL \textbullet{} Git
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Hobbies}
-Cycling \textbullet{}  Running \\ 
+Cycling \textbullet{}  Running \textbullet{} Reading \\
 Spray-Painting \\
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -147,9 +148,9 @@ Spray-Painting \\
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.66\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -157,50 +158,57 @@ Spray-Painting \\
 
 \section{Experience}
 
-\href{http://letsdoitturkiye.org.tr/}{\runsubsection{Let's Do It! Türkiye}}
-\descript{| Country Coordinator }
-\location{Nov 2014 – May 2015 | Istanbul, Turkey}
+\href{http://www.upwork.com/}{\runsubsection{\underline{Upwork}}}
+\descript{| Freelancer }
+\location{Mar 2015 – March 2016 | Istanbul, Turkey}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Lead a single day, nation-wide clean up action accross the country.
-\item Provide instructions and promotional materials for multiple teams in various cities.
-\item Lead local clean-up action in Belgrad Forests of Istanbul with 200 people attendance from corporate companies, non-governmental organizations, university clubs and involving people with disabilities.
+\item Virtual Assistance for an international procurement company -- \custombold{\href{http://www.markit.eu/}{\textcolor{blue}{MartIT}}}
+\item Kocaeli Science Center installation for TUBITAK -- \custombold{\href{http://www.roto.com/}{\textcolor{blue}{Roto}}} 
+\item Website development -- \custombold{\href{http://tekirdagosgb.com/}{\textcolor{blue}{Tekirdag Occupational Health\&Safety}}}
+\item Market research and distributor analysis -- \custombold{\href{http://www.dokito.it/en/}{\textcolor{blue}{Dicos Group}}}
+\item Sample collection of Turkish Speakers for Speech Recognition - \custombold{\href{http://www.1a-voices.com}{\textcolor{blue}{1-a Voices}}} 
 \end{tightemize}
 \sectionsep
 
-\href{http://infron.com.tr/}{\runsubsection{Infron Ltd}}
+\href{http://letsdoitturkiye.org.tr/}{\runsubsection{\underline{Let's Do It! Türkiye}}}
+\descript{| Country Coordinator }
+\location{Nov 2014 – Feb 2016 | Istanbul, Turkey}
+\begin{tightemize}
+\item Organised \custombold{\href{http://cleanworldconference2016.com/}{\textcolor{blue}{Clean World Conference 2016}}} in Bursa with 110 international participants from 40 countries. Please click to watch the \custombold{\href{https://www.youtube.com/watch?v=ceG35xhbVVY}{\textcolor{blue}{video}}}
+\item Lead a single day, nationwide clean up action accross the country
+\item Provide instructions and promotional materials for teams in various cities
+\item Lead a clean-up action in Belgrad Forests of Istanbul with 200 people attendance from corporate firms, NGOs, university clubs
+\end{tightemize}
+\sectionsep
+
+\href{http://www.bsh-group.com.tr/}{\runsubsection{\underline{B/S/H/ Turkey}}}
+\descript{| Master Student Program, Quality Department }
+\location{Aug 2014 – Dec 2015 | Tekirdag, Turkey}
+\begin{tightemize}
+\item Keep track of the Key Performance Indicators from Customer Experience
+\item Find an efficient way of testing procedures of the returning parts and appliances 
+\item Created purchase orders for creating a new testing lab
+\end{tightemize}
+\sectionsep
+
+\href{http://infron.com.tr/}{\runsubsection{\underline{Infron Ltd}}}
 \descript{| Software Engineer }
 \location{Mar 2014 – Feb 2015 | Istanbul, Turkey}
 \begin{tightemize}
-\item Worked on the hardware and software development of palm-size ECG(Electrocardiogram) device.
+\item Worked on the hardware and software development of palm-size ECG device.
 \item Mainly Qt framework used for development.
 \item Implemented DICOM standard with open-source libraries into the device.
 \item After sales support, maintain marketing and PR operations.
 \end{tightemize}
 \sectionsep
 
-\href{http://www.anadolusigorta.com.tr/}{\runsubsection{Anadolu Sigorta}}
-\descript{| Risk Man. \& Internal Audit Team Member}
-\location{Jan 2013 – Mar 2013 | Istanbul, Turkey}
-\begin{tightemize}
-\item Worked as a team member to reduce risk of fraud accounts.
-\end{tightemize}
-\sectionsep
-
-\href{http://kade.com.tr/}{\runsubsection{Kade Vision}}
-\descript{| Intern}
-\location{Jun 2013 – Jul 2013 | Ankara, Turkey }
-\begin{tightemize}
-\item Maintain the source code of human counting algorithm which built with OpenCV.
-\end{tightemize}
-\sectionsep
-
-\href{http://www.accenture.com/lv-en/}{\runsubsection{Accenture Latvia}}
+\href{http://www.accenture.com/lv-en/}{\runsubsection{\underline{Accenture Latvia}}}
 \descript{| Testing Team Member \& Intern}
 \location{Jun 2012 – Sep 2012 | Riga, Latvia \& Pune, India}
 \begin{tightemize}
 \item Implemented ~1000 test cases with the team of 6 people \\
-\item Product was built for customs of EU member and candidate countries with C++ and besides of manually testing of cases did automated performance tests   \\
+\item Product was built for customs of EU member states with C++ and tested manually \\
 \item Worked smoothly with the specification and development team \\
 
 \end{tightemize}
@@ -214,18 +222,15 @@ Spray-Painting \\
 \href{http://metoinside.com/}{\runsubsection{metoinside.com}}
 
 \location{Jan 2010 – Present | Turkey}
-\begin{tightemize}
-\item I write about change, internet of things, programming, leadership, critical decissions, and rarely art \& culture.
-\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Publication
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Publication} 
+\section{Publication}
 \begin{tabular}{rll}
-Turkish	     & \href{http://www.isites.info/PastConferences/ISITES2013/}{ISITES 2013}  & \href{http://www.isites.info/PastConferences/ISITES2013/}{Safety Audit With Imaging Systems For Level Crossing Areas}  \\
+Turkish         & \href{http://www.isites.info/PastConferences/ISITES2013/}{ISITES 2013}  & \href{http://www.isites.info/PastConferences/ISITES2013/}{\textcolor{blue}{Safety Audit With Imaging Systems For Level Crossing Areas}}  \\
 
 \end{tabular}
 \sectionsep
@@ -234,15 +239,16 @@ Turkish	     & \href{http://www.isites.info/PastConferences/ISITES2013/}{ISITES 
 %     SOCIETIES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Societies} 
+\section{Societies}
 
 \begin{tabular}{rll}
-2014 	& Board Member    & \href{http://kocaeliturkcetoastmasters.org/}{Association Of Research And Development On Societal Issues} \\
-2015 	& Founder    & \href{http://kocaeliturkcetoastmasters.org/}{Kocaeli Turkish Toastmasters} \\
-2013 	& Member    & \href{http://istanbultoastmasters.org/}{Istanbul Toastmasters} \\
-2013 	& Member    & IEEE \\
+2016 -      & Board Member    & \href{http://siyamder.org/}{\textcolor{red}{Civil Life Association}} \\
+2015 -      & Founder    & \href{http://kocaeliturkcetoastmasters.org/}{\textcolor{red}{Kocaeli Turkish Toastmasters}} \\
+2014 -      & Board Member    & \href{http://toplumsalarge.org/}{\textcolor{blue}{Association of R\&D on Societal Issues}} \\
+2013 - 2015     & Member    & \href{http://istanbultoastmasters.org/}{\textcolor{blue}{Istanbul Toastmasters}} \\
+2013 - 2014    & Member    & IEEE \\
 \end{tabular}
 \sectionsep
 
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
